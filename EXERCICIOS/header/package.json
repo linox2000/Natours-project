@@ -1,0 +1,14 @@
+{
+  "name": "header",
+  "version": "1.0.0",
+  "description": "pratice how to make a header",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "manuellino",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
