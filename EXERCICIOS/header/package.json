@@ -4,11 +4,9 @@
   "description": "pratice how to make a header",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "sass sass/main.scss css/main.css -w"
   },
   "author": "manuellino",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^6.0.1"
-  }
+  "devDependencies": {}
 }
