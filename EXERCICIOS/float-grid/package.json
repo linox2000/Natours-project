@@ -1,0 +1,11 @@
+{
+  "name": "float-grid",
+  "version": "1.0.0",
+  "description": "exercios about float",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass sass/main.scss css/main.css -w"
+  },
+  "author": "manuelLino",
+  "license": "ISC"
+}
