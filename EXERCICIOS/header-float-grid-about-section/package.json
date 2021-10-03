@@ -1,0 +1,11 @@
+{
+  "name": "header-float-grid-about-section",
+  "version": "1.0.0",
+  "description": "exercicios ",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass sass/main.scss css/styles.css -w"
+  },
+  "author": "manueLino",
+  "license": "ISC"
+}
