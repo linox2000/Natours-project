@@ -1,8 +1,51 @@
-@mixin clearfix{
-  &::after{
+@mixin clearfix {
+  &::after {
     content: "";
     display: table;
     clear: both;
+  }
+}
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERY MANEGER
+/*
+0 - 600px:      Phone
+600 - 900px     Tablet portrait
+900 - 1200px    Tablet landscape
+[1200 - 1800] is where our normal style apply
+1800px + :      Big desktop
+*/
+
+
+/* 
+$breakpoit argument choices:
+-phone
+-tab-port
+-tab-land
+-big-desktop
+*/
+
+// 1em = 16px === 600px/16px = 37.5em
+@mixin respond($breakpoit){
+  @if $breakpoit == phone{
+    @media only screen and (max-width: 37.5em) {  @content }; // 600px
+
+  }
+  @if $breakpoit == tab-port{
+    @media only screen and (max-width: 56.25em) {  @content }; //900px
+
+  }
+  @if $breakpoit == tab-land{
+    @media only screen and (max-width: 75em) {  @content }; // 1200px
+
+  }
+  @if $breakpoit == big-desktop{
+    @media only screen and (min-width: 112.5em) {  @content }; //1800px
 
   }
 }
