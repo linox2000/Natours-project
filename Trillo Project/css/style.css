@@ -31,8 +31,13 @@ html {
 }
 
 body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
   background-color: red;
   background-image: linear-gradient(to right bottom, var(--color-Primary-light), var(--color-Primary-dark));
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=style.css.map */
